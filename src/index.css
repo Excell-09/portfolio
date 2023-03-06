@@ -13,38 +13,6 @@ body,
   @apply text-white
 }
 
-.animate-bounce:nth-child(1) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(2) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(3) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(4) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(5) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(6) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(7) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(8) {
-  @apply opacity-60 hover:opacity-100 transition duration-200
-}
-
-.animate-bounce:nth-child(9) {
+.animate-bounce {
   @apply opacity-60 hover:opacity-100 transition duration-200
 }

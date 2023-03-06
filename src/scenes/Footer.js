@@ -9,7 +9,7 @@ const Footer = () => {
         <SosialMediaIcon />
       </div>
       <div>
-        <h6 className='text-xl font-bold'>Jun CHoi</h6>
+        <h6 className='text-xl font-bold'>Jun Choi</h6>
         <p className='text-md font-semibold'>{date}</p>
       </div>
     </div>

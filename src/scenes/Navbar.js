@@ -16,14 +16,14 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveMediumScreen = useMediaQuery('(min-width:768px)');
 
   return (
-    <nav className={`${isTopOfPage && 'sticky bg-deep-blue'} top-0 z-40 w-full py-4`}>
+    <nav className={`bg-deep-blue fixed top-0 z-40 w-full py-4`}>
       <div className='flex items-center justify-between mx-auto w-5/6'>
-        <h6 className=' font-roboto text-3xl font-bold'>PR</h6>
+        <h6 className=' font-roboto text-3xl font-bold'>JC</h6>
         {isAboveMediumScreen ? (
           <div className='flex justify-between space-x-14 font-roboto text-sm font-semibold'>
             <Link page={'Home'} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />

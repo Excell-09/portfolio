@@ -3,9 +3,10 @@ import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiExpress, SiJavascript, SiTypescript } from 'react-icons/si';
 import { motion } from 'framer-motion';
+
 const Skills = () => {
   return (
-    <section id='skills' className='text-center mb-24'>
+    <section id='skills' className='text-center'>
       <motion.div
         initial='hidden'
         whileInView='visible'
@@ -28,39 +29,39 @@ const Skills = () => {
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <AiFillHtml5 className='text-[4rem] xs:text-[6rem] animate-bounce delay-75' />
+            <AiFillHtml5 className='text-[4rem] xs:text-[6rem] animate-bounce delay-150' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <FaCss3 className='text-[4rem] xs:text-[6rem] animate-bounce delay-100' />
+            <FaCss3 className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <SiTailwindcss className='text-[4rem] xs:text-[6rem] animate-bounce delay-150' />
+            <SiTailwindcss className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <SiJavascript className='text-[4rem] xs:text-[6rem] animate-bounce delay-200' />
+            <SiJavascript className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <FaReact className='text-[4rem] xs:text-[6rem] animate-bounce delay-300' />
+            <FaReact className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <FaNodeJs className='text-[4rem] xs:text-[6rem] animate-bounce delay-75' />
+            <FaNodeJs className='text-[4rem] xs:text-[6rem] animate-bounce ' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <SiMongodb className='text-[4rem] xs:text-[6rem] animate-bounce delay-100' />
+            <SiMongodb className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <SiExpress className='text-[4rem] xs:text-[6rem] animate-bounce delay-150' />
+            <SiExpress className='text-[4rem] xs:text-[6rem] animate-bounce' />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}>
-            <SiTypescript className='text-[4rem] xs:text-[6rem] xs:col-span-4 mx-auto animate-bounce delay-200' />
+            <SiTypescript className='text-[4rem] xs:text-[6rem] xs:col-span-4 mx-auto animate-bounce' />
           </motion.div>
         </motion.div>
       </div>

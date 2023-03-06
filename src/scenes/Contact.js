@@ -15,7 +15,7 @@ const Contact = () => {
     }
   };
   return (
-    <section id='contact' className='py-48'>
+    <section id='contact'>
       {' '}
       <motion.div
         initial='hidden'
