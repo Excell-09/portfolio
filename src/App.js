@@ -20,16 +20,16 @@ const App = () => {
         <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       )}
       <main className='w-5/6 mx-auto'>
-        <motion.div className='mb-28' onViewportEnter={() => setSelectedPage('home')}>
+        <motion.div className='mb-24' onViewportEnter={() => setSelectedPage('home')}>
           <Landing />
         </motion.div>
-        <motion.div className='mb-28' onViewportEnter={() => setSelectedPage('skills')}>
+        <motion.div className='mb-24' onViewportEnter={() => setSelectedPage('skills')}>
           <Skills />
         </motion.div>
-        <motion.div className='mb-28' onViewportEnter={() => setSelectedPage('projects')}>
+        <motion.div className='mb-24' onViewportEnter={() => setSelectedPage('projects')}>
           <Projects />
         </motion.div>
-        <motion.div className='mb-28' onViewportEnter={() => setSelectedPage('contact')}>
+        <motion.div className='mb-24' onViewportEnter={() => setSelectedPage('contact')}>
           <Contact />
         </motion.div>
       </main>

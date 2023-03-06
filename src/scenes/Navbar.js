@@ -15,6 +15,22 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     </AnchorLink>
   );
 };
+const LinkSmallDevice = ({ page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
+  const lowerCasePage = page.toLowerCase();
+  return (
+    <AnchorLink
+      className={`${
+        selectedPage === lowerCasePage && 'text-yellow'
+      } hover:text-yellow transition duration-500`}
+      href={`#${lowerCasePage}`}
+      onClick={() => {
+        setSelectedPage(lowerCasePage);
+        setIsMenuToggled(false);
+      }}>
+      {page}
+    </AnchorLink>
+  );
+};
 
 const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -46,14 +62,26 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               </button>
             </div>
             <div className='flex flex-col space-y-8 ml-[33%] text-2xl text-deep-blue'>
-              <Link page={'Home'} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <Link page={'Skills'} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <Link
+              <LinkSmallDevice
+                setIsMenuToggled={setIsMenuToggled}
+                page={'Home'}
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <LinkSmallDevice
+                setIsMenuToggled={setIsMenuToggled}
+                page={'Skills'}
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <LinkSmallDevice
+                setIsMenuToggled={setIsMenuToggled}
                 page={'Projects'}
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              <LinkSmallDevice
+                setIsMenuToggled={setIsMenuToggled}
                 page={'Contact'}
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}

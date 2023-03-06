@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
-    <section id='skills' className='text-center'>
+    <section id='skills' className='text-center h-screen flex justify-center items-center flex-col'>
       <motion.div
         initial='hidden'
         whileInView='visible'
